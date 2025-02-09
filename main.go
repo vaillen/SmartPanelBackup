@@ -25,10 +25,10 @@ func main() {
     }
 
     // First, perform local backups
-    fmt.Println("Starting local backups...")
+   /* fmt.Println("Starting local backups...")
     if err := performLocalBackups(); err != nil {
         log.Printf("Error during local backups: %v", err)
-    }
+    }*/
 
     // Then, if enabled, perform remote backups
     if os.Getenv("REMOTE_BACKUP_ENABLED") == "true" {
